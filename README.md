@@ -1,15 +1,6 @@
  # laravel-blog
 Vien Blog - 一款基于laravel5.8开发的，支持markdown编辑以及图片拖拽上传的博客系统、SEO友好
 
-## 博主网站
-
-- [VienBlog](https://vienblog.com)
-- [这里有些小秘密](https://vien.tech)
-
-## 项目Github地址
-
-Github: [laravel-blog](https://github.com/luvvien/laravel-blog) ，欢迎Star。
-
 ## 博客亮点
 
 - 界面简洁、适配pc和mobile、有良好的视觉体验
@@ -19,43 +10,6 @@ Github: [laravel-blog](https://github.com/luvvien/laravel-blog) ，欢迎Star。
 - 支持标签、分类、置顶、分享、友链等博客基本属性
 - 支持AdSense
 - 支持百度自动提交链接和手动提交链接
-
-## 博客展示
-
-Demo演示地址: [这是一个DEMO](https://vienblog.com)
-
-### 后台管理
-
-#### 文章列表
-
-主要操作有查询、创作、编辑、置顶、删除（软删除）
-![Laravel Markdown Blog Admin 文章列表 - VienBlog](https://vienblog.com/storage/images/article/20190412/LIn93Jcw8cOmxSKRLEVYyDolRcVbxqS2AAXQiNOg.png)
-
-#### 创作和编辑
-
-创作和编辑页面
-![Laravel Markdown Blog Admin 添加新文章 - VienBlog](https://vienblog.com/storage/images/article/20190406/G8zTereQphzI0ZO3qlpl58z8Ufz0uPfPHfP2WrtL.png)
-
-Markdown编辑器：支持拖拽粘贴上传图片、预览、全屏、分屏预览
-![Laravel Markdown Blog Admin Markdown编辑器 - VienBlog](https://vienblog.com/storage/images/article/20190406/WtKU7tsblKvBMgaFROx3WFdwmD6GPEtZcw2tY1QG.png)
-
-### 前端展示
-
-参照 [这是一个DEMO](http://39.106.108.23)
-
-> 看完Demo，如果你觉得还过得去，想要用一用试试呢，赶紧往下看喔。
-
----
-
-## 使用博客
-
-### 安装
-
-##### 获取源码
-
-```
-git clone git@github.com:luvvien/laravel-blog.git
-```
 
 ##### 进入项目目录后，用`composer`安装依赖
 
@@ -98,9 +52,6 @@ DB_PASSWORD=root
 php artisan migrate
 php artisan db:seed
 ```
-
-如果遇到`SQLSTATE[42000] Syntax error or access violation Specified key was too long error`错误，请参照https://vien.tech/article/156 解决
-
 ##### 创建storage软连接
 
 ```
@@ -163,24 +114,3 @@ server {
 - 地址`/admin`
 - 默认的admin管理账号是`vien@byteinf.com`密码是`vienblog`，进入控制台后可以修改管理员信息
 
-#### 使用百度自动推送和主动推送
-
-请先在`config/vienblog.php`中按照注释配置相关的信息，自动推送是在网页访问时推送，主动推送执行以下代码会将未提交过的链接提交到百度
-
-```
-php artisan push:baidu
-```
-
-## 讨论群
-
-加微信拉群: luvvien （欢迎开发者，技术爱好者，站长加入）
-
-## 联系我
-
-Email: support@vienblog.com
-
-## License
-
-- 使用[Vien Blog](https://vienblog.com)构建应用，必须在页脚保留**Powered by Vien Blog**字样以及[相关链接](https://vienblog.com)
-- 在遵守以上规则的情况下，你可以享受等同于`MIT License`协议的授权。
-- 使用[Vien Blog](https://vienblog.com)并且遵守上述协议的用户可以享受[Vien Blog](https://vienblog.com)的博客导航，联系我将你的博客地址添加到[Vien Blog](https://vienblog.com)的网站导航中。 
